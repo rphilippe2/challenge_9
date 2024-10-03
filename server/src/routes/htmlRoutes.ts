@@ -8,12 +8,12 @@ const router = Router();
 
 // Define route to serve index.html
 router.get("/", (_req, res) => {
-  res.sendFile(path.join(__dirname, "../client/dist/index.html")); // Adjust the path based on your project structure
+  res.sendFile(path.join(__dirname, "../../../client/dist/index.html")); // Adjust the path based on your project structure
 });
 
 // Optional: Define a catch-all route to serve index.html for all other routes (for client-side routing)
 router.get("*", (_req, res) => {
-  res.sendFile(path.join(__dirname, "../client/dist/index.html")); // Redirect to index.html for unknown routes
+  res.sendFile(path.join(__dirname, "../../../client/dist/index.html")); // Redirect to index.html for unknown routes
 });
 
 export default router;
